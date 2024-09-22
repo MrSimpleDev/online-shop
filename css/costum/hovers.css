@@ -1,0 +1,77 @@
+/*bottom line*/
+.my-list a li {
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+}
+.my-list a li:after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #10b67e;
+  box-shadow: 0 0 2px rgba(16, 182, 126, 0.2);
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: 0.3s;
+}
+.my-list a li:hover:after {
+  width: 100%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.hover-line-red {
+  font-size: 15px;
+  position: relative;
+}
+.hover-line-red:after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: rgba(181, 0, 0, 1);
+  box-shadow: 0 0 2px rgba(181, 0, 0, 0.2);
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: 0.4s;
+}
+.hover-line-red:hover:after {
+  width: 100%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+
+/*transform*/
+.hover-transform-red:hover {
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.5);
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.hover-transform-green {
+  transform: scale(1);
+  transition: 0.3s;
+}
+.hover-transform-green:hover {
+  box-shadow: 0 3px 10px rgba(16, 181, 126, 0.3);
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+
+/*shadow*/
+.hover-shadow-red:hover {
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.hover-shadow-light-green:hover {
+  box-shadow: 0 3px 10px rgba(16, 181, 126, 0.3);
+  transition: 0.3s;
+}

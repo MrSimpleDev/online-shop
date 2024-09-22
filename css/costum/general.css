@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "vazir";
+  src: url(../../font/Vazir.ttf) format('truetype');
+}
+
+
+body{
+  font-family: 'vazir';
+  background-color: #efefef;
+}
+
+main {
+  height: fit-content;
+}
+
+.display-none {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slide-img {
+  border-radius: 10px;
+}
+
+.prev-icon, .next-icon  {
+  background-color: rgba(51, 51, 51, 0.5);
+  padding: 7px 7px 0 7px;
+  border-radius: 50%;
+}
+
+.banner-holder a img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.sale-banner-item1, .sale-banner-item2 {
+  border-radius: 10px;
+}
+
+.sale-banner {
+  margin: 0 0 30px 0;
+}
+
+.ci {
+  width: 90%;
+}
+
+.card img {
+  width: 150px;
+  margin: auto;
+}
+
+/*prices*/
+.original-price span {
+  color: rgba(255, 0, 0, 0.9);
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.off-amount {
+  width: fit-content;
+  color: white;
+  background-color: red;
+  font-size: 13px;
+  padding: 1px 5px;
+  border-radius: 100px;
+}
+/*end of prices*/
+
+.blog img {
+  margin: 5% auto 1% auto;
+  border-radius: 5px 5px 5px 20px;
+}
+
+.bottom-0-man {
+  bottom: 0;
+  padding: 0 1rem;
+}
+
+.background-trans {
+  background-color: transparent;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.blog .card-body-man {
+  padding: 0.3rem 1rem;
+}
+
+.blog .bottom-0-man {
+  padding: 0 1rem 0.3rem 1rem;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.grid-temp-col {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+.grid-temp-col-card {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.focus-ring-none:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*@media only screen and (min-width: 1024px) {
+  .slide-img img {
+    width: 100%;
+  }
+}*/
+
+/* 4k */
+@media only screen and (max-width: 2440px) {
+  .slide-img {
+    width: 870px;
+    max-width: 870px;
+  }
+  .bh-img img {
+    width: 422px;
+  }
+  .contact-box {
+    flex-direction: row-reverse !important;
+  }
+  .footer-content {
+    padding-top: 30px;
+  }
+}
+
+/* Laptop L */
+@media only screen and (max-width: 1440px) {
+  .slide-img {
+    width: 700px;
+    max-width: 700px;
+  }
+  .bh-img img {
+    width: 324px;
+  }
+  .grid-temp-col-card {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+/* Laptop */
+@media only screen and (max-width: 1024px) {
+  .slide-img {
+    width: 500px;
+    max-width: 500px;
+  }
+  .bh-img img {
+    width: 224px;
+  }
+  .grid-temp-col {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .banner-holder {
+    display: none !important;
+  }
+  .slide-img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .bh-img img {
+    width: 100%;
+  }
+  .grid-temp-col-card {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .banner-holder {
+    display: flex  !important;
+  }
+  .slide-img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .bh-img img {
+    width: 100%;
+  }
+
+  .image-holder {
+    flex-direction: column;
+    margin: 20px 0 7px 0;
+  }
+
+  .banner-holder {
+    flex-direction: row !important;
+    margin: 7px 0 20px 0;
+  }
+
+  .sale-banner {
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .grid-temp-col {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+/* Mobile L */
+@media only screen and (max-width: 425px) {}
+
+/* Mobile M */
+@media only screen and (max-width: 375px) {}
+
+/* Mobile S */
+@media only screen and (max-width: 320px) {}
+
+
+
+
+.font-size-md {
+  font-size: 1.1rem !important;
+}
+.font-size-sm{
+  font-size: 0.8rem !important;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.w-100px {
+  width: 100px !important;
+}
+.w-200px {
+  width: 200px !important;
+}
+.w-300px {
+  width: 300px !important;
+}
+.w-400px {
+  width: 400px !important;
+}
+.w-500px {
+  width: 500px !important;
+}
+.w-90 {
+  width: 90%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.grid-col {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+.grid-row {}
+
+.grid-temp-row {
+  display: grid;
+}

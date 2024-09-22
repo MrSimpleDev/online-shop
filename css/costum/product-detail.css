@@ -1,0 +1,159 @@
+.breadcrumb-man {
+  width: fit-content;
+  padding: 10px 15px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.the-product {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+  width: 85px;
+  height: 85px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+/*
+.gallery-item-blur {
+  position: relative;
+}*/
+.more {
+  /*position: relative;*/
+  padding: 19px;
+  z-index: 1;
+}
+/*.gallery-item-blur img {
+  filter: blur(3px);
+  position: absolute;
+  width: 70px;
+  z-index: 5;
+}*/
+
+.color-btn button {
+  height: 50px;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 2px solid rgba(62, 62, 62, 0.2);
+}
+
+.color-picker-white {
+  background-color: #fff;
+}
+
+.color-picker-black {
+  background-color: #000;
+}
+
+.color-picker-grey {
+  background-color: #656565;
+}
+
+/*.product-color-black {
+  background-color: #000;
+  border: 2px solid #000;
+}*/
+
+.size-input {
+  width: 43px;
+}
+.size-input input[type="radio"]:checked + label {
+  border-color: green;
+}
+
+.guarantee {
+  background-color: rgba(170, 176, 255, 0.2);
+}
+
+.cart-quantity {
+  padding: 0.3rem 0.6rem;
+}
+
+.after-sale {
+  padding: 1rem 0.5em;
+}
+
+.my-list {
+  padding: 0 0 15px 0;
+}
+
+.my-list li {
+  list-style: none;
+}
+
+.accordion-item {
+
+}
+
+.my-table tr th {
+  padding-bottom: 30px !important;
+  border: none;
+  width: fit-content;
+}
+
+.my-table tr td {
+  border: none;
+}
+
+.accordion-header {
+  font-size: 18px !important;
+  font-weight: bolder !important;
+  position: relative;
+}
+
+.accordion-header:after {
+  content: '';
+  width: 5%;
+  position: absolute;
+  bottom: 8px;
+  border-bottom: 4px solid #10b67e;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+table tr td {
+  display: block;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .my-col {
+    width: 100%;
+  }
+  .my-col .main-image img {
+    width: 80%;
+    margin: auto;
+  }
+  .my-col .main-image {
+    text-align: center;
+  }
+  /*.the-product-details .main-image img {
+    width: max-content;
+    max-width: 220px;
+    margin: auto;
+  }*/
+  .gallery-images,
+  .guarantee,
+  .user-suggestion {
+    display: none!important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .right-side{
+    width: 100%;
+  }
+  .left-side {
+    width: 100%;
+  }
+}

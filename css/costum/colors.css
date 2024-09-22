@@ -1,0 +1,149 @@
+/*default*/
+.color-inherit {
+  color: inherit !important;
+}
+
+/*black*/
+.color-black-hover {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+.color-black-hover:hover {
+  color: #000000!important;
+}
+.color-black {
+  color: #000000!important;
+}
+
+
+/*faint black*/
+.color-faint-black-hover {
+  color: rgba(0, 0, 0, 0.1);
+}
+.color-faint-black-hover:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+.color-faint-black {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*grey*/
+.color-grey {
+  color: rgb(129, 129, 129);
+}
+.color-grey-hover {
+  color: rgba(129, 129, 129, 0.8);
+}
+.color-grey-hover:hover {
+  color: rgb(129, 129, 129);
+}
+.background-grey {
+  background-color: rgb(129, 129, 129);
+}
+.background-grey-hover {
+  background-color: transparent;
+}
+.background-grey-hover:hover {
+  background-color: rgb(129, 129, 129, 0.1);
+}
+
+
+/*faint-blue*/
+.background-faint-blue {
+  background-color: rgb(242, 242, 243);
+}
+.background-faint-blue-hover {
+  background-color: transparent;
+}
+.background-faint-blue-hover:hover {
+  background-color: rgba(242, 242, 243);
+}
+
+
+/*white*/
+.color-white {
+  color: white!important;
+}
+.background-white {
+  background-color: white!important;
+}
+
+.color-green {
+  color: #006500;
+}
+
+
+/*light green*/
+.color-light-green {
+  color: #10b67e;
+}
+.color-light-green-hover {
+  color: rgba(16, 181, 126, 0.8);
+}
+.color-light-green-hover:hover {
+  color: rgb(16, 181, 126);
+}
+.background-light-green {
+  background-color: #10b67e;
+}
+.btn-light-green {
+  background-color: rgba(16, 181, 126, 0.5);
+}
+.btn-light-green:hover {
+  background-color: rgba(10, 163, 111, 0.7);
+}
+
+
+/*faint light green*/
+.color-faint-light-green {
+  color: rgba(16, 181, 126, 0.3);
+}
+.color-faint-light-green-hover {
+  color: rgba(16, 181, 126, 0.1);
+}
+.color-faint-light-green-hover:hover {
+  color: rgba(16, 181, 126, 0.3);
+}
+.background-faint-light-green {
+  background-color: rgba(16, 181, 126, 0.3);
+}
+.background-faint-light-green-hover {
+  background-color: rgba(16, 181, 126, 0);
+}
+.background-faint-light-green-hover:hover {
+  background-color: rgba(16, 181, 126, 0.1);
+}
+
+
+/*orange*/
+.color-orange {
+  color: rgb(234,179,8);
+}
+
+
+/*red*/
+.color-red {
+  color: #c30000;
+}
+.color-red-hover {
+  color: rgba(194, 0, 0, 1);
+}
+.color-red-hover:hover {
+  color: rgba(194, 0, 0, 0.5);
+}
+.background-red {
+  background-color: rgb(255, 0, 0);
+}
+.background-red-hover {
+  background-color: rgba(255, 0, 0, 1);
+  transition: 0.3s;
+}
+.background-red-hover:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+
+
+.border-red {
+  border: 1px solid red;
+}

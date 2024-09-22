@@ -1,0 +1,56 @@
+footer {
+  background-color: #ffffff;
+}
+
+.social-box {
+  background-color: rgba(213, 213, 213, 0.4);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
+.white-space {
+  white-space: nowrap;
+}
+
+.submit-btn {
+  width: 100px;
+  height: 40px;
+}
+
+.copyright {
+  padding-top: 0.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 0.8rem;
+}
+
+.certificate-box img {
+  width: 130px;
+  height: 130px ;
+}
+
+/* Laptop */
+@media only screen and (max-width: 2440px) {
+  .social-box {
+    flex-direction: row;
+  }
+  .linkdooni {
+    align-items: center;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .footer-first-content {
+    flex-direction: column !important;
+  }
+  .social-box {
+    flex-direction: column;
+  }
+  .pipe-char {
+    display: none;
+  }
+  .linkdooni {
+    flex-direction: column;
+  }
+}

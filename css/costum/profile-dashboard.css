@@ -1,0 +1,136 @@
+.mobile-sidebar {
+  display: none !important;
+}
+
+.phone {
+  direction: ltr;
+  width: fit-content;
+  font-size: 13px;
+}
+
+.sidebar {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.dash-btn-light-green {
+  background-color: rgba(16, 181, 126, 0);
+}
+.dash-btn-light-green:hover {
+  background-color: rgba(10, 163, 111, 0.7);
+}
+
+.focused {
+  background-color: rgba(16, 181, 126, 0.3) !important;
+}
+
+.page-title {
+  width: fit-content;
+  position: relative;
+  padding: 0 0 5px 0;
+  font-size: 23px;
+}
+.page-title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.25rem;
+  background: rgb(6, 211, 141);
+  bottom: -5px;
+  left: 0;
+  border-radius: 5px;
+}
+
+.dot {
+  font-size: 35px;
+  color: rgb(10, 163, 111);
+}
+.dot {
+  font-size: 35px;
+  color: rgb(10, 163, 111);
+}
+
+.user-profile h3 {
+  font-size: 20px;
+}
+
+div .notif-text-counter {
+  font-size: 18px;
+}
+
+.my-arrow {
+  position: absolute;
+  top: 11px;
+  left: 7.5px;
+}
+
+
+@media only screen and (min-width: 1380px) {
+  .grid-temp-col-btn {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .current-orders div {
+    justify-content: space-between;
+
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .grid-temp-col-btn {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  .mobile-sidebar {
+    display: flex !important;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    position: static !important;
+    top: 2rem;
+    height: fit-content;
+  }
+  .edit-profile-mobile {
+    top: -10px;
+    right: 42.5%;
+  }
+  .edit-icon {
+    padding: 9px 10px;
+  }
+  .panel-counter {
+    top: -5px;
+    right: 43.5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .user-btn-pages-content,
+  .orders-btn-pages-content,
+  .current-orders {
+    flex-direction: column!important;
+    position: relative;
+  }
+  div .notif-text-counter {
+  display: none;
+  }
+  .notif-text, .liked-text,
+  .specs-text, .password-change-text{
+    font-size: clamp(1vw, 3vw, 8vw);
+  }
+}
