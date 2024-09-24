@@ -323,3 +323,30 @@ header{
         width: 640px;
     }
 }
+
+.search-container {
+    position: relative;
+    transition: height 0.4s ease;
+}
+
+.search-expand {
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 0; /* Set max-height to 0 initially */
+    overflow-y: hidden; /* Hide overflow until expanded */
+    transition: max-height 0.4s ease, opacity 0.4s ease; /* Smooth transitions */
+    opacity: 0;
+}
+
+.search-container.expanded .search-expand {
+    display: block; /* Make it visible */
+    opacity: 1;
+    max-height: 200px; /* Set the maximum height when expanded */
+    overflow-y: auto; /* Enable scrolling when expanded */
+}
