@@ -1,24 +1,289 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card Carousel</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<swiper-container
-  slides-per-view="3"
-  grid-rows="3"
-  mousewheel-force-to-axis="true"
->
-  <swiper-slide>Slide 1</swiper-slide>
-  <swiper-slide>Slide 2</swiper-slide>
-  <swiper-slide>Slide 3</swiper-slide>
-  ...
-</swiper-container>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .slider-container,
+      .slider-wrapper,
+      .slider-track,
+      .card {
+        user-select: none; /* Disable text selection */
+      }
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-<script src="script.js"></script>
-</body>
+      .slider-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+      }
+
+      .slider-wrapper {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slider-track {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 25px;
+      }
+
+      .card {
+        background-color: #f1f1f1;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .slider-btn {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .left-btn {
+        left: 10px;
+      }
+
+      .right-btn {
+        right: 10px;
+      }
+
+      .slider-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <button class="slider-btn left-btn">&#10094;</button> <!-- Left Arrow -->
+
+      <div class="slider-wrapper">
+        <div class="slider-track">
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content category-card-slide">
+              <img src="../image/c3.jpg" alt="" width="128" height="128" class="category-card-img slide-image">
+              <div class="category-card-content">
+                <h2 class="name">کفش</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Add more product cards as needed -->
+        </div>
+      </div>
+
+      <button class="slider-btn right-btn">&#10095;</button> <!-- Right Arrow -->
+    </div>
+
+
+    <script>
+      const sliderTrack = document.querySelector('.slider-track');
+      const leftBtn = document.querySelector('.left-btn');
+      const rightBtn = document.querySelector('.right-btn');
+
+      let startX;
+      let isDragging = false;
+      let scrollLeft;
+      let currentScroll = 0;
+      const cardWidth = document.querySelector('.card').offsetWidth + 15; // Card width + margin
+
+      // Button navigation
+      rightBtn.addEventListener('click', () => {
+        const maxScroll = sliderTrack.scrollWidth - sliderTrack.clientWidth;
+        currentScroll = Math.min(currentScroll + cardWidth, maxScroll);
+        sliderTrack.style.transform = `translateX(-${currentScroll}px)`;
+        toggleButtons();
+      });
+
+      leftBtn.addEventListener('click', () => {
+        currentScroll = Math.max(currentScroll - cardWidth, 0);
+        sliderTrack.style.transform = `translateX(-${currentScroll}px)`;
+        toggleButtons();
+      });
+
+      // Dragging functionality
+      // Dragging functionality
+      sliderTrack.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX - sliderTrack.offsetLeft;
+        scrollLeft = currentScroll;
+        sliderTrack.style.transition = 'none'; // Remove transition during drag
+        cancelAnimationFrame(animationFrameId); // Stop any running animation
+      });
+
+      sliderTrack.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const x = e.pageX - sliderTrack.offsetLeft;
+        const walk = (x - startX); // Drag distance
+        velocity = walk; // Update velocity
+        currentScroll = Math.max(0, Math.min(scrollLeft - walk, sliderTrack.scrollWidth - sliderTrack.clientWidth));
+        sliderTrack.style.transform = `translateX(-${currentScroll}px)`;
+      });
+
+      sliderTrack.addEventListener('mouseup', (e) => {
+        isDragging = false;
+        sliderTrack.style.transition = 'transform 0.3s ease'; // Add transition for smoothness
+        applyInertia();
+      });
+
+      sliderTrack.addEventListener('mouseleave', () => {
+        if (isDragging) {
+          isDragging = false;
+          sliderTrack.style.transition = 'transform 0.3s ease'; // Add transition when leaving
+          applyInertia();
+        }
+      });
+
+      // Apply inertia for smooth stopping
+      function applyInertia() {
+        if (Math.abs(velocity) > 0.5) {
+          currentScroll = Math.max(0, Math.min(currentScroll - velocity, sliderTrack.scrollWidth - sliderTrack.clientWidth));
+          sliderTrack.style.transform = `translateX(-${currentScroll}px)`;
+          velocity *= friction; // Reduce velocity by friction
+
+          animationFrameId = requestAnimationFrame(applyInertia); // Continue the animation
+        } else {
+          toggleButtons(); // Once inertia stops, enable buttons appropriately
+        }
+      }
+
+      // Disable buttons when at the edges
+      function toggleButtons() {
+        leftBtn.disabled = currentScroll <= 0;
+        rightBtn.disabled = currentScroll >= sliderTrack.scrollWidth - sliderTrack.clientWidth;
+      }
+
+      toggleButtons();
+
+    </script>
+  </body>
 </html>
