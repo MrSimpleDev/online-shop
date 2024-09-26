@@ -12,12 +12,12 @@ const card = document.querySelector('.carousel-card');
 
 const totalSliderWidth = slider.scrollWidth;
 const visibleWidth = sliderWrapper.clientWidth;
-const cardWidth = card.offsetWidth + 20; // Adjust if needed based on margin/padding
-const maxTranslate = totalSliderWidth - visibleWidth; // Max boundary for LTR
+const cardWidth = card.offsetWidth + 20; // Adjust based on margin/padding
+const maxTranslate = totalSliderWidth - visibleWidth;
 
 // Function to disable/enable buttons (flipped logic)
 function updateButtonState() {
-  // At the start of the slider (LTR), disable the right button
+  // At the start of the slider, disable the right button
   if (currentTranslate <= 0) {
     rightBtn.disabled = true;
     leftBtn.disabled = false;
@@ -34,7 +34,7 @@ function updateButtonState() {
   }
 }
 
-// Initialize button states
+// update button states
 updateButtonState();
 
 // Helper function to get the X position from touch or mouse events
