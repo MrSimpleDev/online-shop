@@ -113,6 +113,10 @@ img {
   box-shadow: none;
 }
 
+.w-fit {
+  width: fit-content;
+}
+
 /*@media only screen and (min-width: 1024px) {
   .slide-img img {
     width: 100%;
@@ -278,4 +282,9 @@ img {
 
 .grid-temp-row {
   display: grid;
+}
+
+.row-cols-49 > * {
+  flex: 0 0 auto;
+  width: 49%;
 }

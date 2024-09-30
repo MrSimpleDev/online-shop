@@ -1012,328 +1012,1094 @@
       <!--end of the sidebar-->
 
       <!--main-->
-      <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
-        <div>
-          <!--main head-->
-          <div class="margin-bottom-4">
-            <h1 class="page-title">پیشخوان</h1>
-          </div>
-          <!--main head-->
-
-          <!--profile settings-->
-          <div class="user-profile margin-bottom-2 p-right-3 p-left-3">
-            <div class="d-flex align-items-center gap-3 margin-bottom-1">
-              <span class="dot">&#x2022;</span>
-              <h3 class="font-size-md">حساب کاربری</h3>
+      <div class="d-flex flex-column gap-5">
+        <!--dashboard-->
+        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+          <div class="dashboard" id="dashboard">
+            <!--main head-->
+            <div class="margin-bottom-4">
+              <h1 class="page-title">پیشخوان</h1>
             </div>
-            <div class="d-grid grid-temp-col-btn align-items-center gap-4 flex-shrink-0">
+            <!--main head-->
 
-              <button type="button" class="user-btn-pages btn border-3 btn-outline-success rounded-4 p-bottom-2 p-top-2">
-                <div class="user-btn-pages-content d-flex flex-row align-items-center gap-2 white-space">
-                  <div class="specs-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
-                      <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-                    </svg>
-                  </div>
-                  <div class="specs-text">مشخصات کاربری</div>
-                </div>
-              </button>
-
-              <button type="button" class="user-btn-pages btn border-3 btn-outline-warning rounded-4 p-bottom-2 p-top-2">
-                <div class="user-btn-pages-content col d-flex flex-row align-items-center gap-2 white-space">
-                  <div class="password-change-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-shield-lock" viewBox="0 0 16 16">
-                      <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
-                      <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
-                    </svg>
-                  </div>
-                  <div class="password-change-text">تغییر کلمه عبور</div>
-                </div>
-              </button>
-
-              <button type="button" class="user-btn-pages btn border-3 btn-outline-danger rounded-4 p-bottom-2 p-top-2">
-                <div class="user-btn-pages-content col d-flex flex-row align-items-center gap-2 white-space">
-                  <div class="liked-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
-                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                    </svg>
-                  </div>
-                  <div class="liked-text">علاقه مندی ها</div>
-                </div>
-              </button>
-
-              <button type="button" class="user-btn-pages btn border-3 btn-outline-primary rounded-4 p-bottom-2 p-top-2">
-                <div class="user-btn-pages-content col d-flex flex-row align-items-center gap-2 white-space">
-                  <div class="notif-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
-                    </svg>
-                  </div>
-                  <div class="notif-text d-flex gap-1">
-                    <span class="notif-text-counter">3</span>اعلان جدید
-                  </div>
-                </div>
-              </button>
-
-            </div>
-          </div>
-          <!--end of profile settings-->
-
-          <!--orders-->
-          <div class="all-order margin-bottom-2 p-right-3 p-left-3">
-
-            <div class="d-flex align-items-center gap-3 margin-bottom-1">
-              <span class="dot">&#x2022;</span>
-              <h3 class="font-size-md">سفارشات شما</h3>
-            </div>
-
-            <div class="d-grid grid-temp-col-btn margin-bottom-2 gap-4">
-
-              <button type="button" class="col btn btn-primary rounded-4">
-                <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
-                  <div class="active-order-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
-                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                    </svg>
-                  </div>
-                  <div class="active-orders d-flex gap-1">
-                    <div>
-                      <div>
-                        <span class="notif-text-counter">0</span>
-                        سفارش
-                      </div>
-                      <div>در پردازش</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-
-              <button type="button" class="col btn btn-success rounded-4">
-                <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
-                  <div class="active-order-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                    </svg>
-                  </div>
-                  <div class="active-orders d-flex gap-1">
-                    <div>
-                      <div><span class="notif-text-counter ">0</span> سفارش</div>
-                      <div class="">تحویل شده</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-
-              <button type="button" class="col btn btn-danger rounded-4">
-                <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
-                  <div class="active-order-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag-x" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708"/>
-                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                    </svg>
-                  </div>
-                  <div class="active-orders d-flex gap-1">
-                    <div>
-                      <div><span class="notif-text-counter">0</span> سفارش</div>
-                      <div class="">لغو شده</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-
-              <button type="button" class="col btn btn-warning rounded-4">
-                <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
-                  <div class="active-order-icon position-relative">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                      <div class="my-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
-                        </svg>
-                      </div>
-                    </svg>
-                  </div>
-                  <div class="active-orders d-flex gap-1">
-                    <div>
-                      <div><span class="notif-text-counter color-black">0</span> سفارش</div>
-                      <div class="">مرجوع شده</div>
-                    </div>
-                  </div>
-                </div>
-              </button>
-
-            </div>
-
-          </div>
-          <!--end of orders-->
-
-          <!--track orders-->
-          <div class="track-order margin-bottom-2 p-right-3 p-left-3">
-            <div class="d-flex align-items-center gap-3 margin-bottom-1">
-              <span class="dot">&#x2022;</span>
-              <h3 class="font-size-md">سفارشات فعلی</h3>
-            </div>
-
-            <div class="orders">
-              <div class="orders-container p-2">
-                <div class="waiting-payment">
-                  <a class="text-decoration-none color-inherit" href="#">
-                    <div class="p-3 w-100 border border-1 rounded-2 shadow-sm">
-                      <div>
-                        <div class="d-flex align-items-center justify-content-between color-orange margin-bottom-2">
-                          <div class="d-flex gap-2 align-items-center">
-                            <div class="waiting-payment-icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 17 17">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-                              </svg>
-                            </div>
-                            <div class="waiting-payment-text">
-                              <p class="margin-0 font-size-md">در انتظار پرداخت</p>
-                            </div>
-                          </div>
-                          <div class="arrow-icon color-black">
-                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
-                            </svg>
-
-                          </div>
-                        </div>
-                        <div class="current-orders row d-flex gap-3">
-                          <div class="col-xxl time-left d-flex gap-2">
-                            <div class="color-grey">
-                              <p>زمان باقی مانده:</p>
-                            </div>
-                            <div class="color-red">
-                              <p>10 ساعت</p>
-                            </div>
-                          </div>
-                          <div class="col-xxl receipt-number d-flex gap-1">
-                            <div class="color-grey">
-                              <p>شماره سفارش:</p>
-                            </div>
-                            <div class="">
-                              <p>#102030</p>
-                            </div>
-                          </div>
-                          <div class="col-xxl price d-flex gap-1">
-                            <div class="color-grey">
-                              <p>مبلغ کل:</p>
-                            </div>
-                            <div class="color-light-green d-flex gap-1">
-                              <p class="font-bold">1,800,000</p>
-                              <span>تومان</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+            <!--profile settings-->
+            <div class="user-profile margin-bottom-2 p-right-3 p-left-3">
+              <div class="d-flex align-items-center gap-3 margin-bottom-1">
+                <span class="dot">&#x2022;</span>
+                <h3 class="font-size-md">حساب کاربری</h3>
               </div>
-              <div class="order-container p-2">
-                <div class="paid">
-                  <a class="text-decoration-none color-inherit" href="#">
-                    <div class="p-3 w-100 border border-1 rounded-2 shadow-sm">
+              <div class="d-grid grid-temp-col-btn align-items-center gap-4 flex-shrink-0">
+
+                <button type="button" class="user-btn-pages btn border-3 btn-outline-success rounded-4 p-bottom-2 p-top-2">
+                  <div class="user-btn-pages-content d-flex flex-row align-items-center gap-2 white-space">
+                    <div class="specs-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                      </svg>
+                    </div>
+                    <div class="specs-text">مشخصات کاربری</div>
+                  </div>
+                </button>
+
+                <button type="button" class="user-btn-pages btn border-3 btn-outline-warning rounded-4 p-bottom-2 p-top-2">
+                  <div class="user-btn-pages-content col d-flex flex-row align-items-center gap-2 white-space">
+                    <div class="password-change-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-shield-lock" viewBox="0 0 16 16">
+                        <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+                        <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415"/>
+                      </svg>
+                    </div>
+                    <div class="password-change-text">تغییر کلمه عبور</div>
+                  </div>
+                </button>
+
+                <button type="button" class="user-btn-pages btn border-3 btn-outline-danger rounded-4 p-bottom-2 p-top-2">
+                  <div class="user-btn-pages-content col d-flex flex-row align-items-center gap-2 white-space">
+                    <div class="liked-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                      </svg>
+                    </div>
+                    <div class="liked-text">علاقه مندی ها</div>
+                  </div>
+                </button>
+
+                <button type="button" class="user-btn-pages btn border-3 btn-outline-primary rounded-4 p-bottom-2 p-top-2">
+                  <div class="user-btn-pages-content col d-flex flex-row align-items-center gap-2 white-space">
+                    <div class="notif-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                      </svg>
+                    </div>
+                    <div class="notif-text d-flex gap-1">
+                      <span class="notif-text-counter">3</span>اعلان جدید
+                    </div>
+                  </div>
+                </button>
+
+              </div>
+            </div>
+            <!--end of profile settings-->
+
+            <!--orders-->
+            <div class="all-order margin-bottom-2 p-right-3 p-left-3">
+
+              <div class="d-flex align-items-center gap-3 margin-bottom-1">
+                <span class="dot">&#x2022;</span>
+                <h3 class="font-size-md">سفارشات شما</h3>
+              </div>
+
+              <div class="d-grid grid-temp-col-btn margin-bottom-2 gap-4">
+
+                <button type="button" class="col btn btn-primary rounded-4">
+                  <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
+                    <div class="active-order-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag-dash" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M5.5 10a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </div>
+                    <div class="active-orders d-flex gap-1">
                       <div>
-                        <div class="d-flex align-items-center justify-content-between color-light-green margin-bottom-2">
-                          <div class="d-flex gap-2 align-items-center">
-                            <div class="paid-icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-                              </svg>
-                            </div>
-                            <div class="paid-text">
-                              <p class="margin-0 font-size-md">پرداخت شده</p>
-                            </div>
-                          </div>
-                          <div class="arrow-icon color-black">
-                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
-                            </svg>
-
-                          </div>
+                        <div>
+                          <span class="notif-text-counter">0</span>
+                          سفارش
                         </div>
-                        <div class="current-orders row d-flex gap-3 align-items-center">
+                        <div>در پردازش</div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
 
-                          <!--receipt-number-->
-                          <div class="col-xxl current-orders">
-                            <div class="receipt-number d-flex gap-1">
-                            <div class="color-grey">
-                              <p>شماره سفارش:</p>
-                            </div>
-                            <div class="">
-                              <p>#102030</p>
-                            </div>
-                          </div>
-                          </div>
-                          <!--end of receipt-number-->
+                <button type="button" class="col btn btn-success rounded-4">
+                  <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
+                    <div class="active-order-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </div>
+                    <div class="active-orders d-flex gap-1">
+                      <div>
+                        <div><span class="notif-text-counter ">0</span> سفارش</div>
+                        <div class="">تحویل شده</div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
 
-                          <!--price-->
-                          <div class="col-xxl current-orders">
-                            <div class="price d-flex gap-1">
-                            <div class="color-grey">
-                              <p>مبلغ کل:</p>
-                            </div>
-                            <div class="color-light-green d-flex gap-1">
-                              <p class="font-bold">12,080,000</p>
-                              <span>تومان</span>
-                            </div>
-                          </div>
-                          </div>
-                          <!--end of price-->
+                <button type="button" class="col btn btn-danger rounded-4">
+                  <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
+                    <div class="active-order-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag-x" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708"/>
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                      </svg>
+                    </div>
+                    <div class="active-orders d-flex gap-1">
+                      <div>
+                        <div><span class="notif-text-counter">0</span> سفارش</div>
+                        <div class="">لغو شده</div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
 
-                          <!--date-->
-                          <div class="col-xxl current-orders">
-                            <div class="date d-flex gap-1">
-                            <div class="color-grey">
-                              <p>تاریخ ثبت:</p>
-                            </div>
-                            <div class="d-flex gap-1">
-                              <p>18/10/1403</p>
-                            </div>
-                          </div>
-                          </div>
-                          <!--end of date-->
+                <button type="button" class="col btn btn-warning rounded-4">
+                  <div class="orders-btn-pages-content col d-flex align-items-center gap-2">
+                    <div class="active-order-icon position-relative">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        <div class="my-arrow">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </div>
+                      </svg>
+                    </div>
+                    <div class="active-orders d-flex gap-1">
+                      <div>
+                        <div><span class="notif-text-counter color-black">0</span> سفارش</div>
+                        <div class="">مرجوع شده</div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
 
-                          <!--progress-->
-                          <div class="col-12 col-xxl">
-                            <div class="progress-head color-orange d-flex gap-1">
-                              <div class="progress-icon">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+              </div>
+
+            </div>
+            <!--end of orders-->
+
+            <!--track orders-->
+            <div class="track-order margin-bottom-2 p-right-3 p-left-3">
+              <div class="d-flex align-items-center gap-3 margin-bottom-1">
+                <span class="dot">&#x2022;</span>
+                <h3 class="font-size-md">سفارشات فعلی</h3>
+              </div>
+
+              <div class="orders">
+                <div class="orders-container p-2">
+                  <div class="waiting-payment">
+                    <a class="text-decoration-none color-inherit" href="#">
+                      <div class="p-3 w-100 border border-1 rounded-2 shadow-sm">
+                        <div>
+                          <div class="d-flex align-items-center justify-content-between color-orange margin-bottom-2">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="waiting-payment-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 17 17">
+                                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                  <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
                                 </svg>
                               </div>
-                              <div class="progress-text">
-                                <p>در انتظار تایید</p>
+                              <div class="waiting-payment-text">
+                                <p class="margin-0 font-size-md">در انتظار پرداخت</p>
                               </div>
                             </div>
-                            <div class="the-progress-bar">
-                              <div class="progress w-100" role="progressbar" aria-label="Warning example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar bg-warning rounded-2" style="width: 25%"></div>
-                              </div>
-                            </div>
-                            <div class="arrival-date d-flex justify-content-between margin-top-1">
-                              <p>تاریخ تحویل:</p>
-                              <p>21/10/1403</p>
+                            <div class="arrow-icon color-black">
+                              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                              </svg>
+
                             </div>
                           </div>
-                          <!--edn of progress-->
+                          <div class="current-orders row d-flex gap-3">
+                            <div class="col-xxl time-left d-flex gap-2">
+                              <div class="color-grey">
+                                <p>زمان باقی مانده:</p>
+                              </div>
+                              <div class="color-red">
+                                <p>10 ساعت</p>
+                              </div>
+                            </div>
+                            <div class="col-xxl receipt-number d-flex gap-1">
+                              <div class="color-grey">
+                                <p>شماره سفارش:</p>
+                              </div>
+                              <div class="">
+                                <p>#102030</p>
+                              </div>
+                            </div>
+                            <div class="col-xxl price d-flex gap-1">
+                              <div class="color-grey">
+                                <p>مبلغ کل:</p>
+                              </div>
+                              <div class="color-light-green d-flex gap-1">
+                                <p class="font-bold">1,800,000</p>
+                                <span>تومان</span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="order-container p-2">
+                  <div class="paid">
+                    <a class="text-decoration-none color-inherit" href="#">
+                      <div class="p-3 w-100 border border-1 rounded-2 shadow-sm">
+                        <div>
+                          <div class="d-flex align-items-center justify-content-between color-light-green margin-bottom-2">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="paid-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                </svg>
+                              </div>
+                              <div class="paid-text">
+                                <p class="margin-0 font-size-md">پرداخت شده</p>
+                              </div>
+                            </div>
+                            <div class="arrow-icon color-black">
+                              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                              </svg>
+
+                            </div>
+                          </div>
+                          <div class="current-orders row d-flex align-items-center white-space">
+
+                            <!--receipt-number-->
+                            <div class="col-xxl current-orders">
+                              <div class="receipt-number d-flex gap-1">
+                                <div class="color-grey">
+                                  <p>شماره سفارش:</p>
+                                </div>
+                                <div class="">
+                                  <p>#102030</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end of receipt-number-->
+
+                            <!--price-->
+                            <div class="col-xxl current-orders">
+                              <div class="price d-flex gap-1">
+                                <div class="color-grey">
+                                  <p>مبلغ کل:</p>
+                                </div>
+                                <div class="color-light-green d-flex gap-1">
+                                  <p class="font-bold">12,080,000</p>
+                                  <span>تومان</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end of price-->
+
+                            <!--date-->
+                            <div class="col-xxl current-orders">
+                              <div class="date d-flex gap-1">
+                                <div class="color-grey">
+                                  <p>تاریخ ثبت:</p>
+                                </div>
+                                <div class="d-flex gap-1">
+                                  <p>18/10/1403</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end of date-->
+
+                            <!--progress-->
+                            <div class="col-12 col-xxl">
+                              <div class="progress-head color-orange d-flex gap-1">
+                                <div class="progress-icon">
+                                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                  </svg>
+                                </div>
+                                <div class="progress-text">
+                                  <p>در انتظار تایید</p>
+                                </div>
+                              </div>
+                              <div class="the-progress-bar">
+                                <div class="progress w-100" role="progressbar" aria-label="Warning example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar bg-warning rounded-2" style="width: 25%"></div>
+                                </div>
+                              </div>
+                              <div class="arrival-date d-flex justify-content-between margin-top-1">
+                                <p>تاریخ تحویل:</p>
+                                <p>21/10/1403</p>
+                              </div>
+                            </div>
+                            <!--edn of progress-->
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of track orders-->
+
+          </div>
+        </div>
+        <!--end of dashboard-->
+
+        <!--all-orders-->
+        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+          <div class="all-orders" id="allOrders">
+
+            <!--main head-->
+            <div class="margin-bottom-4">
+              <h1 class="page-title">سفارش ها</h1>
+            </div>
+            <!--main head-->
+
+            <!--my-order-->
+            <div class="my-order margin-bottom-2 p-right-3 p-left-3">
+
+              <!--order-control-btn-->
+              <div class="order-btn d-flex gap-2">
+                <div class="current-order-btn">
+                  <button class="border-0 dash-btn-light-green font-bold
+                   hover-transform-green rounded-2 p-2" type="button">
+                    <span>فعلی</span>
+                    <span class="p-left-2 p-right-2 bg-danger border border-light rounded-2">1</span>
+                  </button>
+                </div>
+                <div class="waiting-order-btn">
+                  <button class="border-0 dash-btn-light-green font-bold
+                   hover-transform-green rounded-2 p-2" type="button">
+                    <span>در انتظار پرداخت</span>
+                    <span class="p-left-2 p-right-2 bg-danger border border-light rounded-2">1</span>
+                  </button>
+                </div>
+                <div class="received-order-btn">
+                  <button class="border-0 dash-btn-light-green font-bold
+                   hover-transform-green rounded-2 p-2" type="button">
+                    <span>تحویل شده</span>
+                    <span class="p-left-2 p-right-2 bg-danger border border-light rounded-2">5</span>
+                  </button>
+                </div>
+                <div class="canceled-order-btn">
+                  <button class="border-0 dash-btn-light-green font-bold
+                   hover-transform-green rounded-2 p-2" type="button">
+                    <span>لفو شده</span>
+                    <span class="p-left-2 p-right-2 bg-danger border border-light rounded-2">3</span>
+                  </button>
+                </div>
+                <div class="returned-order-btn">
+                  <button class="border-0 dash-btn-light-green font-bold
+                   hover-transform-green rounded-2 p-2" type="button">
+                    <span>مرجوع شده</span>
+                    <span class="p-left-2 p-right-2 bg-danger border border-light rounded-2">0</span>
+                  </button>
+                </div>
+              </div>
+              <!--end of order-control-btn-->
+
+              <div class="orders">
+                <div class="orders-container p-2">
+                  <div class="waiting-payment">
+                    <a class="text-decoration-none color-inherit" href="#">
+                      <div class="p-3 w-100 border border-1 rounded-2 shadow-sm">
+                        <div>
+                          <div class="d-flex align-items-center justify-content-between color-orange margin-bottom-2">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="waiting-payment-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 17 17">
+                                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                  <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                                </svg>
+                              </div>
+                              <div class="waiting-payment-text">
+                                <p class="margin-0 font-size-md">در انتظار پرداخت</p>
+                              </div>
+                            </div>
+                            <div class="arrow-icon color-black">
+                              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                              </svg>
+
+                            </div>
+                          </div>
+                          <div class="current-orders row d-flex gap-3">
+                            <div class="col-xxl time-left d-flex gap-2">
+                              <div class="color-grey">
+                                <p>زمان باقی مانده:</p>
+                              </div>
+                              <div class="color-red">
+                                <p>10 ساعت</p>
+                              </div>
+                            </div>
+                            <div class="col-xxl receipt-number d-flex gap-1">
+                              <div class="color-grey">
+                                <p>شماره سفارش:</p>
+                              </div>
+                              <div class="">
+                                <p>#102030</p>
+                              </div>
+                            </div>
+                            <div class="col-xxl price d-flex gap-1">
+                              <div class="color-grey">
+                                <p>مبلغ کل:</p>
+                              </div>
+                              <div class="color-light-green d-flex gap-1">
+                                <p class="font-bold">1,800,000</p>
+                                <span>تومان</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="order-container p-2">
+                  <div class="paid">
+                    <a class="text-decoration-none color-inherit" href="#">
+                      <div class="p-3 w-100 border border-1 rounded-2 shadow-sm">
+                        <div>
+                          <div class="d-flex align-items-center justify-content-between color-light-green margin-bottom-2">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="paid-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                  <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                                </svg>
+                              </div>
+                              <div class="paid-text">
+                                <p class="margin-0 font-size-md">پرداخت شده</p>
+                              </div>
+                            </div>
+                            <div class="arrow-icon color-black">
+                              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                              </svg>
+
+                            </div>
+                          </div>
+                          <div class="current-orders row d-flex align-items-center white-space">
+
+                            <!--receipt-number-->
+                            <div class="col-xxl current-orders">
+                              <div class="receipt-number d-flex gap-1">
+                                <div class="color-grey">
+                                  <p>شماره سفارش:</p>
+                                </div>
+                                <div class="">
+                                  <p>#102030</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end of receipt-number-->
+
+                            <!--price-->
+                            <div class="col-xxl current-orders">
+                              <div class="price d-flex gap-1">
+                                <div class="color-grey">
+                                  <p>مبلغ کل:</p>
+                                </div>
+                                <div class="color-light-green d-flex gap-1">
+                                  <p class="font-bold">12,080,000</p>
+                                  <span>تومان</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end of price-->
+
+                            <!--date-->
+                            <div class="col-xxl current-orders">
+                              <div class="date d-flex gap-1">
+                                <div class="color-grey">
+                                  <p>تاریخ ثبت:</p>
+                                </div>
+                                <div class="d-flex gap-1">
+                                  <p>18/10/1403</p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--end of date-->
+
+                            <!--progress-->
+                            <div class="col-12 col-xxl">
+                              <div class="progress-head color-orange d-flex gap-1">
+                                <div class="progress-icon">
+                                  <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                  </svg>
+                                </div>
+                                <div class="progress-text">
+                                  <p>در انتظار تایید</p>
+                                </div>
+                              </div>
+                              <div class="the-progress-bar">
+                                <div class="progress w-100" role="progressbar" aria-label="Warning example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar bg-warning rounded-2" style="width: 25%"></div>
+                                </div>
+                              </div>
+                              <div class="arrival-date d-flex justify-content-between margin-top-1">
+                                <p>تاریخ تحویل:</p>
+                                <p>21/10/1403</p>
+                              </div>
+                            </div>
+                            <!--edn of progress-->
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of my-order-->
+
+          </div>
+        </div>
+        <!--end of all-orders-->
+
+        <!--fav-->
+        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+
+          <!--fav-head-->
+          <div class="d-flex w-100 justify-content-between">
+            <div class="margin-bottom-4">
+              <h1 class="page-title">علاقه مندی ها</h1>
+            </div>
+            <div class="">
+              <button class="border-0 background-red-hover p-2 rounded-2">
+                <div class="delete-all d-flex gap-2 align-items-center color-white">
+                  <div class="bin-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                      <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"></path>
+                    </svg>
+                  </div>
+                  <div class="font-size-sm">
+                    <p class="margin-0">حذف همه</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <!--end of fav-head-->
+
+          <!--fav-body-->
+          <div class="d-grid grid-temp-col-card gap-3 margin-bottom-2">
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-row justify-content-between card-body position-absolute bottom-0 w-100">
+                    <div class="fav-availability font-bold color-light-green"><span>موجود</span></div>
+                    <div class="fav-delete">
+                      <div class="bin-icon color-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"></path>
+                        </svg>
+                      </div>
                     </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-row justify-content-between card-body position-absolute bottom-0 w-100">
+                    <div class="fav-availability font-bold color-light-green"><span>موجود</span></div>
+                    <div class="fav-delete">
+                      <div class="bin-icon color-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-row justify-content-between card-body position-absolute bottom-0 w-100">
+                    <div class="fav-availability font-bold color-light-green"><span>موجود</span></div>
+                    <div class="fav-delete">
+                      <div class="bin-icon color-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-row justify-content-between card-body position-absolute bottom-0 w-100">
+                    <div class="fav-availability font-bold color-light-green"><span>موجود</span></div>
+                    <div class="fav-delete">
+                      <div class="bin-icon color-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-row justify-content-between card-body position-absolute bottom-0 w-100">
+                    <div class="fav-availability font-bold color-light-green"><span>موجود</span></div>
+                    <div class="fav-delete">
+                      <div class="bin-icon color-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-row justify-content-between card-body position-absolute bottom-0 w-100">
+                    <div class="fav-availability font-bold color-light-green"><span>موجود</span></div>
+                    <div class="fav-delete">
+                      <div class="bin-icon color-red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                          <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center d-flex gap-2">
+                <li class="page-item disabled">
+                  <a class="page-link color-black-hover border-0 rounded-2">صفحه قبل</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2 active" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2" href="#">صفحه بعد</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--fav-body-->
+
+        </div>
+        <!--end of fav-->
+
+        <!--recent-->
+        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+
+          <!--recent-head-->
+          <div class="d-flex w-100 justify-content-between">
+            <div class="margin-bottom-4">
+              <h1 class="page-title">بازدید های اخیر</h1>
+            </div>
+          </div>
+          <!--end of fav-head-->
+
+          <!--recent-body-->
+          <div class="d-grid grid-temp-col-card gap-3 margin-bottom-2">
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-column card-body position-absolute bottom-0-man w-100">
+                    <div class="off-amount d-flex"><!--مقدار تخفیف-->
+                      <span>15% تخفیف</span>
+                    </div>
+                    <div class="original-price d-flex"><!--قیمت اصلی-->
+                      <span>1,250,000</span>
+                      <span class="flex-grow-1">تومان</span>
+                    </div>
+                    <div class="sale-price d-flex"><!--قیمت با تخفیف-->
+                      <p>1,000,000</p><span>تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-column card-body position-absolute bottom-0-man w-100">
+                    <div class="off-amount d-flex"><!--مقدار تخفیف-->
+                      <span>15% تخفیف</span>
+                    </div>
+                    <div class="original-price d-flex"><!--قیمت اصلی-->
+                      <span>1,250,000</span>
+                      <span class="flex-grow-1">تومان</span>
+                    </div>
+                    <div class="sale-price d-flex"><!--قیمت با تخفیف-->
+                      <p>1,000,000</p><span>تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-column card-body position-absolute bottom-0-man w-100">
+                    <div class="off-amount d-flex"><!--مقدار تخفیف-->
+                      <span>15% تخفیف</span>
+                    </div>
+                    <div class="original-price d-flex"><!--قیمت اصلی-->
+                      <span>1,250,000</span>
+                      <span class="flex-grow-1">تومان</span>
+                    </div>
+                    <div class="sale-price d-flex"><!--قیمت با تخفیف-->
+                      <p>1,000,000</p><span>تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-column card-body position-absolute bottom-0-man w-100">
+                    <div class="off-amount d-flex"><!--مقدار تخفیف-->
+                      <span>15% تخفیف</span>
+                    </div>
+                    <div class="original-price d-flex"><!--قیمت اصلی-->
+                      <span>1,250,000</span>
+                      <span class="flex-grow-1">تومان</span>
+                    </div>
+                    <div class="sale-price d-flex"><!--قیمت با تخفیف-->
+                      <p>1,000,000</p><span>تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-column card-body position-absolute bottom-0-man w-100">
+                    <div class="off-amount d-flex"><!--مقدار تخفیف-->
+                      <span>15% تخفیف</span>
+                    </div>
+                    <div class="original-price d-flex"><!--قیمت اصلی-->
+                      <span>1,250,000</span>
+                      <span class="flex-grow-1">تومان</span>
+                    </div>
+                    <div class="sale-price d-flex"><!--قیمت با تخفیف-->
+                      <p>1,000,000</p><span>تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#" class="text-decoration-none color-black-hover">
+                <div class="card justify-content-between" style="width: 100%; height: 300px"><!--اندازه کارت-->
+                  <img src="image/p3.png" class="card-img-top" alt=""><!--عکس محصول-->
+                  <div class="card-body">
+                    <h6 class="card-title">کفش پیاده روی مردانه نیو بالانس</h6><!--نام کالا-->
+                  </div>
+                  <div class="d-flex flex-column card-body position-absolute bottom-0-man w-100">
+                    <div class="off-amount d-flex"><!--مقدار تخفیف-->
+                      <span>15% تخفیف</span>
+                    </div>
+                    <div class="original-price d-flex"><!--قیمت اصلی-->
+                      <span>1,250,000</span>
+                      <span class="flex-grow-1">تومان</span>
+                    </div>
+                    <div class="sale-price d-flex"><!--قیمت با تخفیف-->
+                      <p>1,000,000</p><span>تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center d-flex gap-2">
+                <li class="page-item disabled">
+                  <a class="page-link color-black-hover border-0 rounded-2">صفحه قبل</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2 active" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link border-0 color-black-hover rounded-2" href="#">صفحه بعد</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--fav-body-->
+
+        </div>
+        <!--end of recent-->
+
+        <!--locations-->
+        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+
+          <!--locations-head-->
+          <div class="d-flex w-100 justify-content-between">
+            <div class="margin-bottom-4">
+              <h1 class="page-title">آدرس ها</h1>
+            </div>
+            <div class="">
+              <button class="border-0 background-light-green-hover p-2 rounded-2">
+                <div class="delete-all d-flex gap-2 align-items-center color-white">
+                  <div class="location-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                  </div>
+                  <div class="font-size-sm">
+                    <p class="margin-0">اضافه کردن آدرس جدید</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <!--end of locations-head-->
+
+          <!--location-body-->
+          <div class="d-flex border border-1 p-2 p-bottom-4 p-top-4">
+            <div class="address col d-flex align-items-center">
+              <div class="font-bold p-right-2">
+                <span>تهران، تهران، میدان ونک، خیابان مصلی، کوچه شهدای اسلام، پلاک 128</span>
+              </div>
+            </div>
+            <div class="more-options">
+              <div>
+                <a href="">
+                  <button class="option-icon border-0 background-grey-hover rounded-5 p-1" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--edn of location-body-->
+
+        </div>
+        <!--end of locations-->
+
+        <!--edit-profile-->
+        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+
+          <!--edit-profile-head-->
+          <div class="d-flex w-100 justify-content-between">
+            <div class="margin-bottom-4">
+              <h1 class="page-title">تغییر اظلاعات کاربری</h1>
+            </div>
+          </div>
+          <!--end of edit-profile-head-->
+
+          <!--edit-profile-body-->
+          <div class="row row-cols-49 gap-3 p-left-3 p-right-3">
+            <div class="col d-flex align-items-center border border-1 p-2 p-bottom-4 p-top-4 position-relative rounded-2">
+              <div class="edit-profile col d-flex align-items-center">
+                <div class="font-bold p-right-2">
+                  <span>نام کاربری</span>
+                  <span>ایلان هاسک</span>
+                </div>
+              </div>
+              <div class="more-options">
+                <div>
+                  <a href="">
+                    <button class="option-icon border-0 background-grey-hover color-light-green-hover rounded-5 p-1" type="button">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                      </svg>
+
+                    </button>
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-          <!--end of track orders-->
+            <div class="col d-flex align-items-center border border-1 p-2 p-bottom-4 p-top-4 position-relative rounded-2">
+              <div class="edit-profile col d-flex align-items-center">
+                <div class="font-bold p-right-2">
+                  <span>کد ملی</span>
+                  <span>ثبت نشده</span>
+                </div>
+                <!--NA = N/A = Not Authorized-->
+              <div class="NA position-absolute p-left-2 p-right-2">
+                <span>تایید نشده</span>
+              </div>
+              </div>
+              <div class="more-options">
+                <div>
+                  <a href="">
+                    <button class="option-icon border-0 background-grey-hover color-light-green-hover rounded-5 p-1" type="button">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                      </svg>
 
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center border border-1 p-2 p-bottom-4 p-top-4 position-relative rounded-2">
+              <div class="edit-profile col d-flex align-items-center">
+                <div class="font-bold p-right-2">
+                  <span>شمار تماس</span>
+                  <span>0912*****63</span>
+                </div>
+                <!--AUTH = Authorized-->
+                <div class="AUTH position-absolute p-left-2 p-right-2">
+                  <span>تایید شده</span>
+                </div>
+              </div>
+              <div class="more-options">
+                <div>
+                  <a href="">
+                    <button class="option-icon border-0 background-grey-hover color-light-green-hover rounded-5 p-1" type="button">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                      </svg>
+
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center border border-1 p-2 p-bottom-4 p-top-4 position-relative rounded-2">
+              <div class="edit-profile col d-flex align-items-center">
+                <div class="font-bold p-right-2">
+                  <span>ایمیل</span>
+                  <span>test@email.com</span>
+                </div>
+                <!--AUTH = Authorized-->
+                <div class="AUTH position-absolute p-left-2 p-right-2">
+                  <span>تایید شده</span>
+                </div>
+              </div>
+              <div class="more-options">
+                <div>
+                  <a href="">
+                    <button class="option-icon border-0 background-grey-hover color-light-green-hover rounded-5 p-1" type="button">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                      </svg>
+
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center border border-1 p-2 p-bottom-4 p-top-4 position-relative rounded-2">
+              <div class="edit-profile col d-flex align-items-center">
+                <div class="password font-bold p-right-2">
+                  <span>کبمه عبور</span>
+                  <span>........</span>
+                </div>
+              </div>
+              <div class="more-options">
+                <div>
+                  <a href="">
+                    <button class="option-icon border-0 background-grey-hover color-light-green-hover rounded-5 p-1" type="button">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                      </svg>
+
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center border border-1 p-2 p-bottom-4 p-top-4 position-relative rounded-2">
+              <div class="edit-profile col d-flex align-items-center">
+                <div class="font-bold p-right-2">
+                  <span>تاریخ ثبت نام</span>
+                  <span>1403/07/07</span>
+                </div>
+              </div>
+              <div class="more-options">
+                <div>
+                  <a href="">
+                    <button class="option-icon border-0 background-grey-hover color-light-green-hover rounded-5 p-1" type="button">
+                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"/>
+                      </svg>
+
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--end of edit-profile-body-->
         </div>
+        <!--end of edit-profile-->
       </div>
       <!--end of main-->
 
@@ -1415,6 +2181,7 @@
   </footer>
   <!-- end of footer -->
 
+    <script src="js/costum/dashboardHandler.js"></script>
     <script src="js/costum/XScroll.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.js"></script>
   </body>

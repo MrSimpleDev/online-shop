@@ -1,3 +1,7 @@
+.sec-active {
+  display: block;
+}
+
 .mobile-sidebar {
   display: none !important;
 }
@@ -14,7 +18,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   position: sticky;
-  top: 2rem;
+  top: 1rem;
   height: fit-content;
 }
 
@@ -69,6 +73,48 @@ div .notif-text-counter {
   left: 7.5px;
 }
 
+.edit-profile {
+  height: 50px;
+}
+
+.edit-profile div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile span:first-child  {
+  font-size: 18px;
+}
+
+.edit-profile div:first-child span:last-child  {
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+  color: #656565;
+  font-weight: normal;
+  font-size: 15px;
+  direction: ltr;
+}
+
+div .edit-profile .password span:last-child {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.NA {
+  bottom: -11px;
+  left: 40%;
+  color: rgba(194, 0, 0, 1);
+  background: #fff;
+}
+
+.AUTH {
+  bottom: -11px;
+  left: 40%;
+  color: rgb(14, 188, 129);
+  background: #fff;
+}
 
 @media only screen and (min-width: 1380px) {
   .grid-temp-col-btn {
