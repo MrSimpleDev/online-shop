@@ -5,6 +5,11 @@ header{
     background-color: #ffffff;
 }
 
+header div .rules a{
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    text-decoration: none;
+}
+
 .head{
     margin-bottom: 5px;
 }
@@ -270,7 +275,7 @@ header{
 .search-desktop{
     display: none !important;
 }
-    
+
 
 @media screen and (min-width:768px){
     .nav-mobile{
@@ -284,11 +289,11 @@ header{
     .search-mobile{
         display: none !important;
     }
-    
+
     .search-desktop{
         display: unset !important;
     }
-    
+
     .main-dropdown-menu{
         width: 680px;
     }
@@ -296,7 +301,7 @@ header{
     .dropdown-menu-btn-section{
         width: 140px;
     }
-    
+
     .dropdown-menu-button{
         width: 140px;
     }
@@ -350,3 +355,51 @@ header{
     max-height: 200px; /* Set the maximum height when expanded */
     overflow-y: auto; /* Enable scrolling when expanded */
 }
+
+/*sign-in / sign-up btn*/
+.sign-up {
+    padding: 20px;
+}
+
+.open-popup {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.popup-content {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.blur {
+    filter: blur(10px);
+}
+/*end of sign-in / sign-up btn*/

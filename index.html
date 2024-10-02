@@ -58,7 +58,7 @@
                                   <!-- پایان بخش بدنه -->
                                 </div>
                             </div>
-                            <!-- پایان منو کرکره ای --> 
+                            <!-- پایان منو کرکره ای -->
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">تماس با ما</a>
@@ -169,13 +169,51 @@
                 </a>
               <!-- پایان آیکون سبد خرید -->
               <!-- آیکون یوزر -->
+              <button  class="open-popup border-0 background-trans p-0" id="openPopupBtn" type="button">
                 <a class="link" href="#">
                   <!-- آیکون -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                  </svg>
                   <!-- پایان آیکون -->
                 </a>
+              </button>
+              <div id="popup" class="popup">
+                <div class="popup-content d-flex flex-column align-items-center">
+                  <span class="close d-flex color-red font-bold">&times;</span>
+                  <div class="d-flex gap-3 margin-bottom-2">
+                    <h2>ورود</h2>
+                    <h2>&#124;</h2>
+                    <h2>ثبت نام</h2>
+                  </div>
+                  <!--Sign-in or Sign-up form-->
+                  <div class="d-flex justify-content-center w-100">
+                    <form class="d-flex flex-column gap-5 w-100">
+                      <div class="d-flex flex-column gap-3">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control border  border-2" id="floatingInput" placeholder="Email address">
+                          <label for="floatingInput">ایمیل</label>
+                        </div>
+                        <div class="form-floating">
+                          <input type="password" class="form-control border  border-2" id="floatingPassword" placeholder="Password">
+                          <label for="floatingPassword">رمز عبور</label>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column align-items-center">
+                        <button class="w-25 btn btn-success border-0" type="submit">ورود</button>
+                        <div class="margin-top-1">
+                    <span class="rules">
+                      با ورود به فروشگاه با
+                      <a href="#">کلیه قوانین</a>
+                      موافقت میکنم
+                    </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--end of Sign-in or Sign-up form-->
+                </div>
+              </div>
               <!-- پایان آیکون یوزر -->
                <!-- آیکون ورود -->
                 <a class="link" href="">
@@ -218,10 +256,10 @@
                                 <li class="d-flex w-100 dropdown-menu-body">
                                   <!-- بخش دسته ها -->
                                     <div class="nav flex-row nav-pills dropdown-menu-btn-section" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                      <!-- دکمه ی ابتدایی و پیش فرض فعال -->  
+                                      <!-- دکمه ی ابتدایی و پیش فرض فعال -->
                                       <button class="nav-link active dropdown-menu-button" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">مردانه</button>
                                       <!-- پایان دکمه ی ابتدایی و پیش فرض فعال -->
-                                      <!-- سایر دکمه(برای کپی از این دکمه ستفاده شوند) --> 
+                                      <!-- سایر دکمه(برای کپی از این دکمه ستفاده شوند) -->
                                       <button class="nav-link dropdown-menu-button" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">مردانه</button>
                                       <!-- پایان بخش سایر دکمه ها -->
                                     </div>
@@ -235,7 +273,7 @@
                                                 <a href="" class="seeall">
                                                     <p class="seeall-name">
                                                       مشاهده همه
-                                                    </p> 
+                                                    </p>
                                                     <span class="seeall-greaterthan">
                                                       &#62;
                                                     </span>
@@ -554,12 +592,12 @@
                                               <a href="" class="seeall">
                                                   <p class="seeall-name">
                                                     مشاهده همه
-                                                  </p> 
+                                                  </p>
                                                   <span class="seeall-greaterthan">
                                                     &#62;
                                                   </span>
                                               </a>
-                                            </div>  
+                                            </div>
                                             <div class="d-flex flex-row justify-content-start p-2 nav-list-main">
                                               <div class="d-flex flex-column justify-content-center align-items-start nav-list-container">
                                                   <a href="" class="headlist">
@@ -691,7 +729,7 @@
                                         </div>
                                       <!-- پایان تب سایر دکمه ها -->
                                     </div>
-                                    <!-- نگهدارنده ی بدنه زیر دسته ها --> 
+                                    <!-- نگهدارنده ی بدنه زیر دسته ها -->
                                 </li>
                               <!-- پایان بدنه -->
                             </ul>
@@ -1292,6 +1330,7 @@
     <!-- end of footer -->
 
     <script src="js/costum/searchBarExtend.js"></script>
+    <script src="js/costum/signUpPopup.js"></script>
     <script src="js/costum/XScroll.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.js"></script>
 </body>

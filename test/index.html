@@ -1,89 +1,112 @@
-<div class="slider-container">
-  <button class="slider-btn right-btn rounded-5">&#10094;</button> <!-- Right Arrow -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign-In/Sign-Up Popup</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-  <div class="slider-wrapper">
-    <div class="slider-track">
-      <div class="carousel-card">
-        <a href="#" class="text-decoration-none color-black-hover">
-          <div class="card justify-content-start blog" style="width: 265px;">
-            <img src="image/blog1.jpg" class="w-90" alt="">
-            <div class="card-body-man">
-              <h6 class="card-title">کفش پیاده</h6>
-            </div>
-            <div class="d-flex justify-content-end card-body gap-2 bottom-0-man">
-              <span>8/19/2024</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="carousel-card">
-        <a href="#" class="text-decoration-none color-black-hover">
-          <div class="card justify-content-start blog" style="width: 265px;">
-            <img src="image/blog1.jpg" class="w-90" alt="">
-            <div class="card-body-man">
-              <h6 class="card-title">کفش پیاده</h6>
-            </div>
-            <div class="d-flex justify-content-end card-body gap-2 bottom-0-man">
-              <span>8/19/2024</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="carousel-card">
-        <a href="#" class="text-decoration-none color-black-hover">
-          <div class="card justify-content-start blog" style="width: 265px;">
-            <img src="image/blog1.jpg" class="w-90" alt="">
-            <div class="card-body-man">
-              <h6 class="card-title">کفش پیاده</h6>
-            </div>
-            <div class="d-flex justify-content-end card-body gap-2 bottom-0-man">
-              <span>8/19/2024</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="carousel-card">
-        <a href="#" class="text-decoration-none color-black-hover">
-          <div class="card justify-content-start blog" style="width: 265px;">
-            <img src="image/blog1.jpg" class="w-90" alt="">
-            <div class="card-body-man">
-              <h6 class="card-title">کفش پیاده</h6>
-            </div>
-            <div class="d-flex justify-content-end card-body gap-2 bottom-0-man">
-              <span>8/19/2024</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="carousel-card">
-        <a href="#" class="text-decoration-none color-black-hover">
-          <div class="card justify-content-start blog" style="width: 265px;">
-            <img src="image/blog1.jpg" class="w-90" alt="">
-            <div class="card-body-man">
-              <h6 class="card-title">کفش پیاده</h6>
-            </div>
-            <div class="d-flex justify-content-end card-body gap-2 bottom-0-man">
-              <span>8/19/2024</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="carousel-card">
-        <a href="#" class="text-decoration-none color-black-hover">
-          <div class="card justify-content-start blog" style="width: 265px;">
-            <img src="image/blog1.jpg" class="w-90" alt="">
-            <div class="card-body-man">
-              <h6 class="card-title">کفش پیاده</h6>
-            </div>
-            <div class="d-flex justify-content-end card-body gap-2 bottom-0-man">
-              <span>8/19/2024</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- Add more product cards as needed -->
-    </div>
-  </div>
+    .sign-up {
+      padding: 20px;
+    }
 
-  <button class="slider-btn left-btn rounded-5">&#10095;</button> <!-- Left Arrow -->
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Modal styling */
+    .popup {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .blur {
+      filter: blur(5px);
+    }
+
+  </style>
+</head>
+<body>
+<div class="sign-up">
+  <!-- Your main content goes here -->
+  <button class="open-popup" id="openPopupBtn">Sign In/Sign Up</button>
 </div>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Sign In / Sign Up</h2>
+    <!-- Sign-in or Sign-up form goes here -->
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const openModalBtn = document.getElementById('openModalBtn');
+    const modal = document.getElementById('modal');
+    const mainContent = document.querySelector('.sign-up');
+    const closeModalBtn = document.querySelector('.close');
+
+    // Open the modal
+    openModalBtn.addEventListener('click', () => {
+      modal.style.display = 'block';
+      mainContent.classList.add('blur');
+    });
+
+    // Close the modal when the close button is clicked
+    closeModalBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+      mainContent.classList.remove('blur');
+    });
+
+    // Close the modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+        mainContent.classList.remove('blur');
+      }
+    });
+  });
+
+</script>
+</body>
+</html>
