@@ -1,5 +1,14 @@
-.sec-active {
-  display: block;
+.btn-active {
+  background-color: rgba(16, 181, 126, 0.3) !important;
+  transform: scale(1.02);
+}
+
+.dashboard-container div .sec-active {
+  display: flex !important;
+}
+
+.dashboard-container div .main-panel {
+  display: none;
 }
 
 .mobile-sidebar {

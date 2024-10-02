@@ -734,8 +734,8 @@
           <!--sidebar body-->
           <div class="d-flex flex-column gap-4 p-top-2">
             <div CLASS="d-flex flex-column gap-2">
-              <div><a class="text-decoration-none" href="#">
-                <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green focused">
+              <div><a class="sidebar-btn text-decoration-none" href="#">
+                <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green btn-active" disabled>
                   <span>
                     <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -746,7 +746,7 @@
                   </span>
                 </button>
               </a></div>
-              <div><a class="text-decoration-none" href="#">
+              <div><a class="sidebar-btn text-decoration-none" href="#">
                 <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green">
                   <span>
                     <span>
@@ -758,7 +758,7 @@
                   </span>
                 </button>
               </a></div>
-              <div><a class="text-decoration-none" href="#">
+              <div><a class="sidebar-btn text-decoration-none" href="#">
                 <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green">
                   <span>
                     <span>
@@ -771,7 +771,7 @@
                   </span>
                 </button>
               </a></div>
-              <div><a class="text-decoration-none" href="#">
+              <div><a class="sidebar-btn text-decoration-none" href="#">
                 <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green foc">
                   <span>
 
@@ -786,7 +786,7 @@
                   </span>
                 </button>
               </a></div>
-              <div><a class="text-decoration-none" href="#">
+              <div><a class="sidebar-btn text-decoration-none" href="#">
                 <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green">
                   <span>
                     <span>
@@ -801,7 +801,7 @@
                   </span>
                 </button>
               </a></div>
-              <div><a class="text-decoration-none" href="#">
+              <div><a class="sidebar-btn text-decoration-none" href="#">
                 <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green">
                   <span>
                     <span>
@@ -814,7 +814,7 @@
                   </span>
                 </button>
               </a></div>
-              <div><a class="text-decoration-none" href="#">
+              <div><a class="sidebar-btn text-decoration-none" href="#">
                 <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-between w-100 p-2 rounded-2 hover-transform-green">
                   <span>
                     <span>
@@ -850,6 +850,7 @@
           <!--end of sidebar body-->
         </div>
 
+        <!--mobile sidebar head-->
         <div class="mobile-sidebar d-flex justify-content-center flex-column background-white rounded-2 p-3 ">
 
           <div class="d-flex justify-content-center align-items-center p-bottom-2 border-bottom margin-bottom-1 position-relative">
@@ -877,9 +878,9 @@
               </button></a>
             </div>
           </div>
-          <!--end sidebar head-->
+          <!--end mobile sidebar head-->
 
-          <!--sidebar body-->
+          <!--mobile sidebar body-->
           <p class="d-inline-flex justify-content-center gap-1">
             <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePanel" aria-expanded="false" aria-controls="collapsePanel">
               <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -892,7 +893,7 @@
             <div class="d-flex flex-column gap-4 p-top-2">
               <div CLASS="d-flex flex-column gap-2">
                 <div><a class="text-decoration-none" href="#">
-                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green focused">
+                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green focused" data-target="#dashboard">
                   <span>
                     <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -904,7 +905,7 @@
                   </button>
                 </a></div>
                 <div><a class="text-decoration-none" href="#">
-                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green">
+                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green" data-target="#allOrders">
                   <span>
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
@@ -916,7 +917,7 @@
                   </button>
                 </a></div>
                 <div><a class="text-decoration-none" href="#">
-                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green">
+                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green" data-target="#fav">
                   <span>
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
@@ -929,7 +930,7 @@
                   </button>
                 </a></div>
                 <div><a class="text-decoration-none" href="#">
-                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green foc">
+                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green" data-target="#recent">
                   <span>
 
                     <span>
@@ -944,7 +945,7 @@
                   </button>
                 </a></div>
                 <div><a class="text-decoration-none" href="#">
-                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green position-relative">
+                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green position-relative" data-target="#messages">
                   <span>
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
@@ -959,7 +960,7 @@
                   </button>
                 </a></div>
                 <div><a class="text-decoration-none" href="#">
-                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green">
+                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green" data-target="#addresses">
                   <span>
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -972,7 +973,7 @@
                   </button>
                 </a></div>
                 <div><a class="text-decoration-none" href="#">
-                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green">
+                  <button class="border-0 dash-btn-light-green color-black d-flex gap-2 justify-content-center w-100 p-2 rounded-2 hover-transform-green" data-target="#editProfile">
                   <span>
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
@@ -1005,17 +1006,17 @@
 
             </div>
           </div>
-          <!--end of sidebar body-->
+          <!--end of mobile sidebar body-->
         </div>
 
       </aside>
-      <!--end of the sidebar-->
+      <!--end of the mobile sidebar-->
 
       <!--main-->
       <div class="d-flex flex-column gap-5">
         <!--dashboard-->
-        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
-          <div class="dashboard" id="dashboard">
+        <div id="dashboard" class="sec-active main-panel col col-sm-12 col-lg flex-column background-white rounded-2 p-3">
+          <div class="dashboard">
             <!--main head-->
             <div class="margin-bottom-4">
               <h1 class="page-title">پیشخوان</h1>
@@ -1340,8 +1341,8 @@
         <!--end of dashboard-->
 
         <!--all-orders-->
-        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
-          <div class="all-orders" id="allOrders">
+        <div id="allOrders" class="main-panel col col-sm-12 col-lg flex-column background-white rounded-2 p-3">
+          <div class="all-orders">
 
             <!--main head-->
             <div class="margin-bottom-4">
@@ -1553,7 +1554,7 @@
         <!--end of all-orders-->
 
         <!--fav-->
-        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+        <div id="fav" class="main-panel col col-sm-12 col-lg flex-column background-white rounded-2 p-3">
 
           <!--fav-head-->
           <div class="d-flex w-100 justify-content-between">
@@ -1728,7 +1729,7 @@
         <!--end of fav-->
 
         <!--recent-->
-        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+        <div id="recent" class="main-panel col col-sm-12 col-lg flex-column background-white rounded-2 p-3">
 
           <!--recent-head-->
           <div class="d-flex w-100 justify-content-between">
@@ -1901,7 +1902,7 @@
         <!--end of recent-->
 
         <!--locations-->
-        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+        <div id="locations" class="main-panel col col-sm-12 col-lg flex-column background-white rounded-2 p-3">
 
           <!--locations-head-->
           <div class="d-flex w-100 justify-content-between">
@@ -1951,7 +1952,7 @@
         <!--end of locations-->
 
         <!--edit-profile-->
-        <div class="col col-sm-12 col-lg d-flex flex-column background-white rounded-2 p-3">
+        <div id="editProfile" class="main-panel col col-sm-12 col-lg flex-column background-white rounded-2 p-3">
 
           <!--edit-profile-head-->
           <div class="d-flex w-100 justify-content-between">
@@ -2182,7 +2183,6 @@
   <!-- end of footer -->
 
     <script src="js/costum/dashboardHandler.js"></script>
-    <script src="js/costum/XScroll.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.js"></script>
   </body>
 </html>
