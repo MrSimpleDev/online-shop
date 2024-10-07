@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const openModalBtn = document.getElementById('openPopupBtn');
+  const openPopupBtn = document.getElementById('openPopupBtn');
   const modal = document.getElementById('popup');
-  const mainContent = document.querySelector('.sign-up');
-  const closeModalBtn = document.querySelector('.close');
+  const mainContent = document.querySelector('main');
+  const closePopupBtn = document.querySelector('.close');
 
-  // Open the modal
-  openModalBtn.addEventListener('click', () => {
+  // Open the modal`
+  openPopupBtn.addEventListener('click', () => {
     modal.style.display = 'block';
     mainContent.classList.add('blur');
   });
 
   // Close the modal when the close button is clicked
-  closeModalBtn.addEventListener('click', () => {
+  closePopupBtn.addEventListener('click', () => {
     modal.style.display = 'none';
     mainContent.classList.remove('blur');
   });

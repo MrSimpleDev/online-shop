@@ -5,7 +5,8 @@ header{
     background-color: #ffffff;
 }
 
-header div .rules a{
+header div .rules a,
+header div .fp a{
     color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
     text-decoration: none;
 }
@@ -401,5 +402,10 @@ header div .rules a{
 
 .blur {
     filter: blur(10px);
+}
+
+.fp {
+    margin-top: -30px;
+    padding-right: 10px;
 }
 /*end of sign-in / sign-up btn*/

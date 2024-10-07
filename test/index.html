@@ -1,112 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Sign-In/Sign-Up Popup</title>
-  <style>
-    /* General styling */
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .sign-up {
-      padding: 20px;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    /* Modal styling */
-    .popup {
-      display: none; /* Hidden by default */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-
-    .popup-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    .blur {
-      filter: blur(5px);
-    }
-
-  </style>
-</head>
-<body>
-<div class="sign-up">
-  <!-- Your main content goes here -->
-  <button class="open-popup" id="openPopupBtn">Sign In/Sign Up</button>
-</div>
-
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span class="close">&times;</span>
-    <h2>Sign In / Sign Up</h2>
-    <!-- Sign-in or Sign-up form goes here -->
-    <form>
-      <label for="email">Email:</label>
-      <input type="email" id="email" required>
-      <label for="password">Password:</label>
-      <input type="password" id="password" required>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openModalBtn = document.getElementById('openModalBtn');
-    const modal = document.getElementById('modal');
-    const mainContent = document.querySelector('.sign-up');
-    const closeModalBtn = document.querySelector('.close');
-
-    // Open the modal
-    openModalBtn.addEventListener('click', () => {
-      modal.style.display = 'block';
-      mainContent.classList.add('blur');
-    });
-
-    // Close the modal when the close button is clicked
-    closeModalBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-      mainContent.classList.remove('blur');
-    });
-
-    // Close the modal when clicking outside of the modal content
-    window.addEventListener('click', (event) => {
-      if (event.target === modal) {
-        modal.style.display = 'none';
-        mainContent.classList.remove('blur');
-      }
-    });
-  });
-
-</script>
-</body>
-</html>
+.fp-content {
+position: absolute;
+width: 25%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+opacity: 0; /* Initially hidden */
+z-index: 0; /* Initially below */
+transition: opacity 0.3s ease;
+}
