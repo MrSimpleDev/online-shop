@@ -46,6 +46,9 @@
 .background-grey-hover:hover {
   background-color: rgb(129, 129, 129, 0.1);
 }
+.background-faint-grey {
+  background-color: rgb(129, 129, 129, 0.5);
+}
 
 
 /*faint-blue*/
